@@ -563,6 +563,14 @@
     "                              Content-Disposition header as UTF-8 instead of\n" \
     "                              ISO-8859-1, for example, the filename parameter,\n" \
     "                              but not the extended version filename*.")
+#define TEXT_HTTP_WANT_DIGEST                          \
+  _(" --http-want-digest[=true|false] Send Want-Digest HTTP requser header\n" \
+    "                              with only limited hash algorithms:\n" \
+    "                              SHA-512, SHA-256, and SHA-1.\n" \
+    "                              The Want-Digest HTTP header is primarily used\n" \
+    "                              in a HTTP request, to ask the responder to\n" \
+    "                              provide a digest of the requested resource\n" \
+    "                              using the Digest response header")
 #define TEXT_EVENT_POLL                                                 \
   _(" --event-poll=POLL            Specify the method for polling events.")
 #define TEXT_BT_EXTERNAL_IP                                             \

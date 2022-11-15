@@ -390,6 +390,8 @@ extern PrefPtr PREF_HTTP_ACCEPT_GZIP;
 // value: true | false
 extern PrefPtr PREF_CONTENT_DISPOSITION_DEFAULT_UTF8;
 // value: true | false
+extern PrefPtr PREF_HTTP_WANT_DIGEST;
+// value: true | false
 extern PrefPtr PREF_NO_WANT_DIGEST_HEADER;
 
 /**;

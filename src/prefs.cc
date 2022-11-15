@@ -440,6 +440,9 @@ PrefPtr PREF_CONTENT_DISPOSITION_DEFAULT_UTF8 =
 // value: true | false
 PrefPtr PREF_NO_WANT_DIGEST_HEADER = makePref("no-want-digest-header");
 
+// values: true | false
+PrefPtr PREF_HTTP_WANT_DIGEST = makePref("http-want-digest");
+
 /**
  * Proxy related preferences
  */

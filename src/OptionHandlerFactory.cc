@@ -63,6 +63,18 @@ std::vector<OptionHandler*> OptionHandlerFactory::createOptionHandlers()
     handlers.push_back(op);
   }
   {
+    OptionHandler* op(
+        new BooleanOptionHandler(PREF_HTTP_WANT_DIGEST,
+                                 TEXT_HTTP_WANT_DIGEST,
+                                 A2_V_FALSE, OptionHandler::OPT_ARG));
+    op->addTag(TAG_ADVANCED);
+    op->addTag(TAG_HTTP);
+    op->setInitialOption(true);
+    op->setChangeGlobalOption(true);
+    op->setChangeOptionForReserved(true);
+    handlers.push_back(op);
+  }
+  {
     OptionHandler* op(new BooleanOptionHandler(
         PREF_ALLOW_PIECE_LENGTH_CHANGE, TEXT_ALLOW_PIECE_LENGTH_CHANGE,
         A2_V_FALSE, OptionHandler::OPT_ARG));
